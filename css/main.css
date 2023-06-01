@@ -1,0 +1,192 @@
+* {
+    --webkit-box-sizing:border-box;
+    --moz-box-sizing:border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --VerytDarkMagenta: hsl(300, 43%, 22%);
+    --SofttPink : hsl(333, 80%, 67%);
+    --DarktGrayishtMagenta: hsl(303, 10%, 53%);
+    --LightGrayishtMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 40px;
+    background-image: url(../images/bg-pattern-top-desktop.svg) , url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: right 54vw bottom 67vh , left 60vw top -21vh;
+}
+main{
+    width: 1020px;
+    margin-bottom: 40px;
+}
+.container {
+    max-width: 100%;
+}
+.container .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .head .first h1 {
+    width: 225px;
+    font-weight: 700;
+    color: var(--VerytDarkMagenta);
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.container .head .first p {
+    color: var(--DarktGrayishtMagenta);
+    width: 350px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.container .second {
+    width: 400px;
+    align-content: flex-end;
+    margin-top: 30px;
+}
+.container .rate-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--LightGrayishtMagenta);
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+}
+ .container .second  .one {
+    margin-left: -110px;
+} 
+.container .second  .two {
+    margin-left: -30px;
+} 
+
+.container .rate-1 p {
+    color: var(--VerytDarkMagenta);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+.container .down {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+.container .down .box-1 ,
+.container .down .box-2 ,
+.container .down .box-3 {
+    background-color: var(--VerytDarkMagenta);
+    padding: 30px 20px;
+    border-radius: 10px;
+    height: fit-content;
+}
+.container .down img {
+    width: 50px;
+    border-radius: 50%;
+    margin-left: -100px;
+}
+.container .down .box-1  .content ,
+.container .down .box-2 .content  ,
+.container .down .box-3 .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.container .down .name {
+    margin-left: -170px;
+}
+.container .down h2 {
+    color: var(--White);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.container .down span {
+    color: var(--SofttPink);
+    font-weight: 700;
+}
+.container .down p {
+    color: var(--LightGrayishtMagenta);
+    line-height: 1.5;
+    width: 260px;
+}
+.container .down .box-2 {
+    margin-top: 30px;
+}
+.container .down .box-3 {
+    margin-top: 70px;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: visible;
+        background-image: url(../images/bg-pattern-top-mobile.svg) , url(../images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top 0 left 0 , right 0 bottom 85px;
+    }
+    main {
+        width: 300px;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .container .head {
+        flex-direction: column;
+    }
+    .container .head .first h1 {
+        width: fit-content;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container .head .first p {
+        width: fit-content;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .container .second .one,
+    .container .second .two  {
+        margin-left: auto;
+        margin-right: auto;
+    } 
+   .container .second {
+    max-width: 100%;
+    margin-right: 15px;
+   }
+   .container .rate-1 {
+    max-width: 100%;
+    flex-direction: column;
+   }
+   .container .rate-1 .star {
+    margin-bottom: 10px;
+   }
+    .container .down {
+        grid-template-columns:  1fr ;
+    }
+    .container .down .box-1 ,
+    .container .down .box-2 ,
+    .container .down .box-3 {
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+
